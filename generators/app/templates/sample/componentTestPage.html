@@ -1,0 +1,29 @@
+<html>
+	<head lang="en">
+		<script src="dist/components.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<script type="text/javascript">
+		window.addEventListener('DOMContentLoaded', function() {
+			var container = document.getElementById('components');
+			if (typeof MyComponents === 'undefined') {
+				console.warn("Please ensure that the dist components are generated using iife.\nAlso, if the module name has been changed update it in the componentTestPage.html\nThese settings are in the rollup.config.js file.");
+			}
+			var components = MyComponents;
+			var compNames = Object.keys(components);
+
+			container.innerHTML = compNames.map(function(name) {
+				return '<div id="' + 'component_' + name + '"></div>';
+			}).join('');
+
+			for (var i = 0, len = compNames.length; i < len; i++) {
+				new MyComponents[compNames[i]]({
+					target: document.getElementById('component_' + compNames[i])
+				});
+			}
+		});
+	</script>
+	<body>
+		<h1>Component Test Page</h1>
+		<div id="components"></div>
+	</body>
+</html>

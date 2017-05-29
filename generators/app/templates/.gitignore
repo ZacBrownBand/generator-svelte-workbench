@@ -1,0 +1,6 @@
+node_modules
+src/**/*.temp.js
+src/**/*.temp.html
+src/**/*.temp.css
+src/**/*.build.js
+external-rollup.config.js
