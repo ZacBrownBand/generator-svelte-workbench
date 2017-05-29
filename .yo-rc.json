@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Zachariah Brown",
+      "authorEmail": "zachairahwbrown1@gmail.com",
+      "authorUrl": "zachariahwbrown.com"
+    }
+  }
+}
