@@ -28,7 +28,7 @@ module.exports = class extends Generator {
       type: 'list',
       name: 'format',
       message: 'Component module format',
-      default: 0,
+      default: 3,
       choices: ['amd', 'cjs', 'es', 'iife', 'umd']
     }, {
       type: 'input',
@@ -88,8 +88,12 @@ module.exports = class extends Generator {
   conflicts() {}
 
   install() {
-    this.installDependencies();
+    this.installDependencies({
+      bower: false,
+      npm: true,
+      callback: function () {
+        this.spawnCommand('gulp', ['dist']);
+      }.bind(this)
+    });
   }
-
-  end() {}
 };

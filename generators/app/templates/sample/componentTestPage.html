@@ -6,7 +6,10 @@
 		window.addEventListener('DOMContentLoaded', function() {
 			var container = document.getElementById('components');
 			if (typeof MyComponents === 'undefined') {
-				console.warn("Please ensure that the dist components are generated using iife.\nAlso, if the module name has been changed update it in the componentTestPage.html\nThese settings are in the rollup.config.js file.");
+				var message = "Please ensure that the dist components are generated using iife and that the ModuleName set in rollup.config.js matches the global variable being used in componentTestPage.html";
+				console.warn(message);
+				alert(message);
+
 			}
 			var components = MyComponents;
 			var compNames = Object.keys(components);
