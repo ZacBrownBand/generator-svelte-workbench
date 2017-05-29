@@ -1,5 +1,12 @@
-# generator-svelte-workbench [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-svelte-workbench [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > A structured workspace for creating and packaging svelte components.
+
+This workspace created by this generator comes with a few key features that helps you to start writting components sooner, maintain them, and distribute.  
+
+It comes with [Rollup](https://github.com/rollup/rollup) for module bundling and [Bublé](https://www.npmjs.com/package/buble) to allow for ES2015/16 JavaScript code to be used in your components without needing to worry about browser/environment support.  
+
+The other main feature is the file structure that is supported. Rather than putting the css, html and js for a component in a single file, they are all split up and a gulp task takes care of the rest.  
+
 
 ## Installation
 
@@ -15,13 +22,6 @@ Then generate your new project:
 ```bash
 yo svelte-workbench
 ```
-
-## Getting To Know Yeoman
-
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
 
 ## License
 
