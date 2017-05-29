@@ -1,6 +1,6 @@
 {
   "name": "generator-svelte-workbench",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A structured workspace for creating and packaging svelte components.",
   "homepage": "",
   "author": {
