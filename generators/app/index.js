@@ -52,7 +52,7 @@ module.exports = class extends Generator {
     var fileMap = {
       'package.json': 'package.json',
       'gulpfile.js': 'gulpfile.js',
-      '.gitignore': '.gitignore'
+      'gitignore': '.gitignore'
     };
 
     if (this.props.sample) {
