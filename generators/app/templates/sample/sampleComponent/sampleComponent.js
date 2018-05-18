@@ -1,5 +1,5 @@
 export default {
-    data: function() {
+    data() {
         return {
           text: 'Sample'
         };

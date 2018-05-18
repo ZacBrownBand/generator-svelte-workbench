@@ -1,6 +1,6 @@
 {
   "name": "generator-svelte-workbench",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A structured workspace for creating and packaging svelte components.",
   "homepage": "",
   "author": {
@@ -21,31 +21,28 @@
     "yeoman-generator"
   ],
   "devDependencies": {
-    "yeoman-test": "^1.6.0",
+    "eslint": "4.15.0",
+    "eslint-config-xo-space": "0.17.0",
+    "jest": "22.0.5",
+    "jest-cli": "22.0.5",
+    "nsp": "3.1.0",
     "yeoman-assert": "^3.0.0",
-    "nsp": "^2.6.3",
-    "eslint": "^3.18.0",
-    "eslint-config-xo-space": "^0.16.0",
-    "jest": "^19.0.2",
-    "jest-cli": "^20.0.0"
+    "yeoman-test": "^1.6.0"
   },
   "dependencies": {
-    "yeoman-generator": "2.0.2",
     "chalk": "2.3.0",
+    "yeoman-generator": "2.0.5",
     "yosay": "2.0.1"
   },
   "jest": {
     "testEnvironment": "node"
   },
   "scripts": {
-    "prepublish": "nsp check",
-    "pretest": "eslint . --fix",
-    "test": "jest"
+    "prepublish": "nsp check"
   },
   "eslintConfig": {
     "extends": "xo-space",
     "env": {
-      "jest": true,
       "node": true
     }
   },
