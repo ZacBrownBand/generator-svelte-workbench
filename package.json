@@ -23,9 +23,8 @@
   "devDependencies": {
     "eslint": "4.15.0",
     "eslint-config-xo-space": "0.17.0",
-    "jest": "22.0.5",
-    "jest-cli": "22.0.5",
-    "nsp": "3.1.0",
+    "jest": "22.4.4",
+    "jest-cli": "22.4.4",
     "yeoman-assert": "^3.0.0",
     "yeoman-test": "^1.6.0"
   },
@@ -37,9 +36,7 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "scripts": {
-    "prepublish": "nsp check"
-  },
+  "scripts": {},
   "eslintConfig": {
     "extends": "xo-space",
     "env": {
