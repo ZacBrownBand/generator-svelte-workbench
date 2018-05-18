@@ -10,8 +10,6 @@ describe('generator-svelte-workbench:app', () => {
   });
 
   it('creates files', () => {
-    assert.file([
-      'dummyfile.txt'
-    ]);
+    assert.file([]);
   });
 });
