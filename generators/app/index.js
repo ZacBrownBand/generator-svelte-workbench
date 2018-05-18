@@ -73,8 +73,8 @@ module.exports = class extends Generator {
     var conf = fs.readFileSync(this.templatePath('rollup.config.js')).toString();
     conf = conf.replace(/\/\*\|format\|\*\/.*\/\*\|format\|\*\//ig,
       '/*|format|*/format: \'' + this.props.format + '\', /*|format|*/')
-      .replace(/\/\*\|moduleName\|\*\/.*\/\*\|moduleName\|\*\//ig,
-        '/*|moduleName|*/moduleName: \'' + this.props.moduleName + '\', /*|moduleName|*/');
+      .replace(/\/\*\|name\|\*\/.*\/\*\|name\|\*\//ig,
+        '/*|name|*/name: \'' + this.props.moduleName + '\', /*|name|*/');
     fs.writeFileSync(this.destinationPath('rollup.config.js'), conf);
 
     const pkg = this.fs.readJSON(this.destinationPath('package.json'));

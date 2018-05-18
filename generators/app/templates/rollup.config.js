@@ -4,8 +4,6 @@ import resolve from 'rollup-plugin-node-resolve';
 import svelte from 'rollup-plugin-svelte';
 
 export default {
-  /*|format|*/format: 'amd',/*|format|*/
-  /*|moduleName|*/moduleName: 'MyComponents',/*|moduleName|*/
   plugins: [
     resolve({
       jsnext: true,
@@ -16,5 +14,9 @@ export default {
     }),
     svelte(),
     buble()
-  ]
+  ],
+  output: {
+    /*|format|*/format: 'amd',/*|format|*/
+    /*|name|*/name: 'MyComponents',/*|name|*/
+  }
 };
